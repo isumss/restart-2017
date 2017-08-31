@@ -1770,7 +1770,7 @@ ul.navbar-nav > li.header-ticket:hover > a:after{
 .ts-speakers{
 	 color: #ffffff;
 	 background-color: #ffc000;
-	 background-image: url(../images/parallax2.jpg);
+	 /*background-image: url(../images/parallax2.jpg);*/
 	 background-repeat: no-repeat;
 	 background-size: cover;
 	 background-attachment: scroll;
@@ -2037,7 +2037,7 @@ ul.navbar-nav > li.header-ticket:hover > a:after{
 
 .ts-pricing{
 	background-color: #f5f5f5;
-	background-image: url(../images/parallax3.jpg);
+	/*background-image: url(../images/parallax3.jpg);*/
 	background-repeat: no-repeat;
    background-attachment: scroll;
    background-size: cover;
@@ -2277,7 +2277,7 @@ h4.panel-title a.collapsed:before {
 	padding-bottom: 0;
 	color: #ffffff;
    background-color: #ffc000;
-   background-image: url(../images/parallax4.jpg);
+  /* background-image: url(../images/parallax4.jpg);*/
    background-repeat: no-repeat;
    background-size: cover;
    background-attachment: scroll;
