@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>re:Start Countdown</title>
+    <meta name="description" content="re:Start talk timer">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="styles/main-108f0e82.css">
+    <script src="scripts/main-79f7179d.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div id="getStarted" class="row">
+        <div style="height: 100%;" class="col-xs-12">
+          <div id="middle-row" class="row">
+            <div class="middle-row Set-timer">
+              <h3 class="Set-timer__title"><img src="images/logo.png" class="Set-timer__logo"><strong>Talk Timer</strong></h3>
+              <form onsubmit="return false;" class="form-inline">
+                <div class="Set-timer__options">
+                  <select id="timeSelect" class="form-control form-control--dropdown Set-timer__select">
+                    <option value="1800000">30 Minutes</option>
+                    <option value="1500000">25 Minutes</option>
+                    <option value="1200000">20 Minutes</option>
+                    <option value="1140000">19 Minutes</option>
+                    <option value="1080000">18 Minutes</option>
+                    <option value="1020000">17 Minutes</option>
+                    <option value="960000">16 Minutes</option>
+                    <option selected value="900000">15 Minutes</option>
+                    <option value="840000">14 Minutes</option>
+                    <option value="780000">13 Minutes</option>
+                    <option value="720000">12 Minutes</option>
+                    <option value="660000">11 Minutes</option>
+                    <option value="600000">10 Minutes</option>
+                    <option value="540000">9 Minutes</option>
+                    <option value="480000">8 Minutes</option>
+                    <option value="420000">7 Minutes</option>
+                    <option value="360000">6 Minutes</option>
+                    <option value="300000">5 Minutes</option>
+                    <option value="240000">4 Minutes</option>
+                    <option value="180000">3 Minutes</option>
+                    <option value="120000">2 Minutes</option>
+                    <option value="60000">1 Minute</option>
+                    <option value="0">0 Minutes</option>
+                  </select>
+                  <select id="secSelect" class="form-control form-control--dropdown Set-timer__select">
+                    <option value="0"> 0 Seconds</option>
+                    <option value="30000"> 30 Seconds</option>
+                  </select>
+                  <select id="howSelect" class="form-control form-control--dropdown Set-timer__select">
+                    <option value="on-stage">  Start on stage</option>
+                    <option value="now">        Start now</option>
+                    <option value="ten-seconds"> Start in 10 seconds</option>
+                  </select>
+                </div>
+                <button id="startDropdownButton" class="btn btn-default button Set-timer__start">
+                  Go
+
+                </button>
+                <!--button.btn.btn-danger.btn-start(data-start='now') Start now-->
+                <!--button.btn.btn-danger.btn-start(data-start='ten-seconds') Start in 10 seconds-->
+                <!--button.btn.btn-danger.btn-start(data-start='on-demand') On demand-->
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div id="counter-wrapper" class="row">
+        <div class="col-xs-12">
+          <div id="overtime">
+            &nbsp;
+
+          </div>
+          <div id="timer" class="timer-undertime">
+            <div id="counter-container"></div>
+          </div>
+        </div>
+      </div>
+      <div id="dot-wrapper" class="row">
+        <div id="dots" class="row dotStart">
+          <div class="dotblock">
+            <div id="one" class="dot"></div>
+          </div>
+          <div class="dotblock">
+            <div id="two" class="dot"></div>
+          </div>
+          <div class="dotblock">
+            <div id="three" class="dot"></div>
+          </div>
+          <div class="dotblock">
+            <div id="four" class="dot"></div>
+          </div>
+          <div class="dotblock">
+            <div id="five" class="dot"></div>
+          </div>
+          <div class="dotblock">
+            <div id="six" class="dot"></div>
+          </div>
+          <div class="dotblock">
+            <div id="seven" class="dot"></div>
+          </div>
+          <div class="dotblock">
+            <div id="eight" class="dot"></div>
+          </div>
+          <div class="dotblock">
+            <div id="nine" class="dot"></div>
+          </div>
+          <div class="dotblock">
+            <div id="ten" class="dot"></div>
+          </div>
+        </div>
+        <div id="pause" class="fade-object">
+          <div class="pausedot"><img src="images/pause.svg" id="pause-icon"></div>
+        </div>
+      </div>
+      <div id="pauseModal" aria-hidden="true" class="modal fade">
+        <div class="modalOptions">
+          <div class="row">
+            <div class="col-xs-2 modaldot col-xs-offset-3">
+              <div id="resume" class="helpdot"><img src="images/play.svg" id="modal-play-icon" class="svg">
+                <p>Resume</p>
+              </div>
+            </div>
+            <div class="col-xs-2 modaldot">
+              <div id="restart" class="helpdot"><img src="images/start-over.svg" id="modal-play-icon" class="svg">
+                <p>Start&nbsp;Over</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div id="startPauseModal" aria-hidden="true" class="modal">
+        <div class="modalOptions">
+          <div class="row">
+            <div class="col-xs-2 modaldot col-xs-offset-5">
+              <div id="startPlay" class="helpdot"><img src="images/play.svg" id="modal-play-icon" class="svg">
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="delayModal" aria-hidden="true" class="modal">
+        <div id="delay-countdown-holder" class="modalOptions">
+          <div class="counterSpot">Start in <div id="delayCounter">10</div></div>
+          <div class="cancelLink"><a onClick="$('#delayModal').modal('hide');">
+              Cancel
+              </a></div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        countdown.initialize();
+      });
+
+    </script>
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-170299-36', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
